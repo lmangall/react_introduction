@@ -1,7 +1,4 @@
-import { useState } from "react";
-import Button from "./button";
-
-const text = [
+[
 	"Eh toi, le procrastinateur professionnel, tu te sens bien au royaume des je fais ça plus tard ?",
 	"T'as déjà essayé de mesurer le temps que tu passes à remettre au lendemain ce que tu pourrais faire aujourd'hui ? C'est sûrement un record olympique !",
 	"Dis-moi, cher procrastinateur, est-ce que ton lit est un vortex magnétique qui t'aspire dès que tu cherches à te mettre au travail ?",
@@ -18,29 +15,4 @@ const text = [
 	"Alors, cher ami de la procrastination, quand est-ce que tu vas enfin te décider à faire face à l'inévitable et à agir ?",
 	"Quand tu te retrouves à procrastiner, est-ce que tu te demandes si tu es un génie incompris ou juste un paresseux ?",
 	"Bon, allez, c'est l'heure de passer à l'action... ou peut-être après une petite sieste ?"
-];
-
-// function MyFirstFunction()
-
-function App() {
-	const [textShown, setTextShown] = useState(text[8]);
-
-	function handleClick(){
-		const nextText = text.shift();
-		// console.log(nextTest);
-		setTextShown(nextText);
-	}
-
-
-	return (
-		<div className="App" onClick={handleClick}>
-			<div className="text_content">
-				{/* curlies for javascript */}
-				{textShown}
-				<Button />
-			</div>
-		</div >
-	);
-}
-
-export default App;
+  ]
